@@ -1,0 +1,4 @@
+[Project]
+Name=PathPlanning
+Manager=KDevCustomMakeManager
+VersionControl=kdevgit
