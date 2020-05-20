@@ -168,7 +168,6 @@ bool PATHPLAN::Run(double x, double y, double theta){
     if (AngSign(dPspl, XsPspl) == 0) {
       tangent[0] = dPspl[0];
       tangent[1] = dPspl[1];
-      R = INFINITY;
     } else {
         double Xcir[2];
         BuildCircle(x,y,x0,y0,tau0,Xcir);

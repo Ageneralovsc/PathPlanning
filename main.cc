@@ -71,8 +71,9 @@ void set_spline_waypoints(const std::vector<std::array<double, 2>>& spline_vecto
 int main(int argc, char **argv) {
     
     double ret = 0;
-    const std::string defaulWaypointFile = "waypoints/ws.csv";
-
+    std::string defaulWaypointFile;
+    defaulWaypointFile = "waypoints/ws.csv";
+    
     std::string wayPointsFilename(defaulWaypointFile);
     
     std::vector<std::array<double, 2>> sw;
@@ -86,11 +87,9 @@ int main(int argc, char **argv) {
     
     //set_spline_waypoints(sw);
 
-    std::cerr << "Last element:" << sw.size()-1 << std::endl;
+    std::cout << "Last element:" << sw.size()-1 << std::endl;
     for(unsigned int i = sw.size()-1; i < sw.size(); i++)
-        std::cerr << i << "x=" << sw[i][0] << " y=" << sw[i][1] << std::endl;
-    
-    
+        std::cout << i << "x=" << sw[i][0] << " y=" << sw[i][1] << std::endl;
     
     
     
